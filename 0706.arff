@@ -1,0 +1,118 @@
+@relation 0706
+
+@attribute JenisKelamin {Pria,Wanita}
+@attribute IPK {CumLaude,Memuaskan,DiBawah275,SangatMemuaskan}
+@attribute Psikologi {Baik,CukupBaik,SangatBaik}
+@attribute IQ {VerySuperior,Superior,BelowAverage,Genius,AboveAverage,Average,Borderline}
+@attribute StatusKerja {BekerjadanWiraswasta,MelanjutkanStudi,Bekerja,TidakBekerja,Wirausaha}
+@attribute KategoriPerusahaan {Nasional,Lainnya,Lokal,Multinasional}
+@attribute KesesuaianKerjadanKuliah {TidakSesuai,Sesuai}
+@attribute Jabatan {Staf,LainnyaTidakBekerja,Pemilik,Magang,Manajer,Direktur}
+@attribute Gaji {SangatTinggi,Nol,Tinggi,Sedang,Rendah,SangatRendah}
+@attribute Bonus {Besar,TidakAdaBonus,Sedang,Kecil}
+@attribute KepuasanKerja {Puas,TidakPuas}
+@attribute KetepatanWaktuLulus {TepatWaktu,TidakTepatWaktu}
+@attribute KeaktifanOrganisasi {Aktif,TidakAktif,KurangAktif,CukupAktif}
+@attribute StatusLulus {Lulus,TidakLulus}
+
+@data
+Pria,CumLaude,Baik,VerySuperior,BekerjadanWiraswasta,Nasional,TidakSesuai,Staf,SangatTinggi,Besar,Puas,TepatWaktu,Aktif,Lulus
+Pria,Memuaskan,Baik,Superior,MelanjutkanStudi,Lainnya,TidakSesuai,LainnyaTidakBekerja,Nol,TidakAdaBonus,Puas,TepatWaktu,TidakAktif,Lulus
+Pria,Memuaskan,Baik,VerySuperior,BekerjadanWiraswasta,Nasional,TidakSesuai,Staf,Tinggi,Besar,TidakPuas,TepatWaktu,Aktif,Lulus
+Pria,Memuaskan,Baik,VerySuperior,MelanjutkanStudi,Lainnya,TidakSesuai,LainnyaTidakBekerja,Nol,TidakAdaBonus,Puas,TepatWaktu,TidakAktif,Lulus
+Pria,Memuaskan,Baik,BelowAverage,Bekerja,Nasional,Sesuai,Staf,Sedang,Besar,TidakPuas,TepatWaktu,KurangAktif,Lulus
+Pria,DiBawah275,CukupBaik,Genius,TidakBekerja,Lainnya,TidakSesuai,LainnyaTidakBekerja,Rendah,Sedang,TidakPuas,TidakTepatWaktu,KurangAktif,TidakLulus
+Pria,Memuaskan,CukupBaik,AboveAverage,BekerjadanWiraswasta,Nasional,TidakSesuai,Staf,Sedang,Sedang,TidakPuas,TidakTepatWaktu,KurangAktif,TidakLulus
+Pria,DiBawah275,Baik,Superior,BekerjadanWiraswasta,Nasional,TidakSesuai,Pemilik,Tinggi,Sedang,TidakPuas,TidakTepatWaktu,KurangAktif,TidakLulus
+Pria,SangatMemuaskan,Baik,VerySuperior,Bekerja,Lainnya,Sesuai,Pemilik,Tinggi,Sedang,Puas,TidakTepatWaktu,Aktif,TidakLulus
+Pria,CumLaude,CukupBaik,Genius,Wirausaha,Nasional,Sesuai,Staf,Sedang,Sedang,Puas,TidakTepatWaktu,Aktif,TidakLulus
+Pria,DiBawah275,CukupBaik,VerySuperior,Bekerja,Lokal,TidakSesuai,Magang,Tinggi,Besar,Puas,TidakTepatWaktu,TidakAktif,TidakLulus
+Pria,Memuaskan,CukupBaik,Genius,Bekerja,Nasional,Sesuai,Magang,Sedang,Sedang,TidakPuas,TidakTepatWaktu,KurangAktif,TidakLulus
+Pria,Memuaskan,CukupBaik,VerySuperior,BekerjadanWiraswasta,Nasional,TidakSesuai,Magang,Sedang,Sedang,TidakPuas,TidakTepatWaktu,CukupAktif,TidakLulus
+Pria,SangatMemuaskan,Baik,Superior,Bekerja,Nasional,Sesuai,Staf,Tinggi,TidakAdaBonus,TidakPuas,TepatWaktu,CukupAktif,Lulus
+Wanita,Memuaskan,Baik,Superior,Bekerja,Multinasional,TidakSesuai,Staf,Tinggi,TidakAdaBonus,TidakPuas,TepatWaktu,TidakAktif,Lulus
+Pria,DiBawah275,Baik,Average,Bekerja,Multinasional,TidakSesuai,Staf,Sedang,TidakAdaBonus,TidakPuas,TidakTepatWaktu,CukupAktif,Lulus
+Pria,Memuaskan,Baik,Average,Bekerja,Multinasional,TidakSesuai,Manajer,Sedang,Besar,TidakPuas,TepatWaktu,Aktif,Lulus
+Pria,Memuaskan,Baik,Average,Bekerja,Nasional,Sesuai,Staf,Tinggi,TidakAdaBonus,Puas,TidakTepatWaktu,Aktif,Lulus
+Pria,SangatMemuaskan,Baik,AboveAverage,MelanjutkanStudi,Lainnya,TidakSesuai,LainnyaTidakBekerja,Nol,TidakAdaBonus,Puas,TepatWaktu,TidakAktif,Lulus
+Pria,SangatMemuaskan,Baik,Average,Bekerja,Nasional,Sesuai,Staf,Tinggi,Besar,Puas,TidakTepatWaktu,KurangAktif,Lulus
+Wanita,SangatMemuaskan,Baik,Average,Bekerja,Lokal,Sesuai,Staf,SangatTinggi,TidakAdaBonus,TidakPuas,TepatWaktu,CukupAktif,Lulus
+Wanita,Memuaskan,Baik,Superior,Bekerja,Multinasional,Sesuai,Staf,Tinggi,TidakAdaBonus,TidakPuas,TepatWaktu,Aktif,Lulus
+Pria,Memuaskan,Baik,AboveAverage,Bekerja,Nasional,Sesuai,Staf,Tinggi,TidakAdaBonus,TidakPuas,TepatWaktu,CukupAktif,Lulus
+Pria,Memuaskan,Baik,Average,Wirausaha,Nasional,TidakSesuai,Direktur,Sedang,TidakAdaBonus,TidakPuas,TidakTepatWaktu,Aktif,Lulus
+Pria,Memuaskan,Baik,Average,Bekerja,Nasional,Sesuai,Staf,Tinggi,Sedang,TidakPuas,TepatWaktu,TidakAktif,Lulus
+Pria,CumLaude,Baik,Average,MelanjutkanStudi,Lainnya,TidakSesuai,LainnyaTidakBekerja,Nol,TidakAdaBonus,Puas,TepatWaktu,TidakAktif,Lulus
+Wanita,Memuaskan,CukupBaik,Average,Bekerja,Nasional,Sesuai,Staf,Sedang,Besar,TidakPuas,TepatWaktu,Aktif,Lulus
+Wanita,Memuaskan,Baik,VerySuperior,Bekerja,Lokal,Sesuai,Staf,Rendah,Kecil,Puas,TidakTepatWaktu,CukupAktif,Lulus
+Wanita,SangatMemuaskan,CukupBaik,VerySuperior,Bekerja,Multinasional,Sesuai,Staf,Tinggi,TidakAdaBonus,TidakPuas,TepatWaktu,Aktif,Lulus
+Pria,Memuaskan,CukupBaik,VerySuperior,Bekerja,Lokal,Sesuai,Staf,Tinggi,TidakAdaBonus,TidakPuas,TidakTepatWaktu,CukupAktif,Lulus
+Pria,DiBawah275,SangatBaik,VerySuperior,Bekerja,Lokal,TidakSesuai,Staf,Sedang,Besar,TidakPuas,TidakTepatWaktu,CukupAktif,Lulus
+Pria,SangatMemuaskan,Baik,Average,Bekerja,Nasional,Sesuai,Staf,Tinggi,Sedang,TidakPuas,TepatWaktu,Aktif,Lulus
+Pria,Memuaskan,Baik,AboveAverage,Wirausaha,Nasional,TidakSesuai,Manajer,Sedang,TidakAdaBonus,TidakPuas,TepatWaktu,CukupAktif,Lulus
+Pria,Memuaskan,Baik,VerySuperior,Bekerja,Nasional,TidakSesuai,Staf,Tinggi,TidakAdaBonus,Puas,TepatWaktu,CukupAktif,Lulus
+Pria,DiBawah275,Baik,Average,TidakBekerja,Lainnya,TidakSesuai,LainnyaTidakBekerja,Nol,TidakAdaBonus,Puas,TepatWaktu,TidakAktif,Lulus
+Pria,Memuaskan,Baik,Genius,Bekerja,Nasional,Sesuai,Staf,Rendah,TidakAdaBonus,TidakPuas,TepatWaktu,Aktif,Lulus
+Pria,Memuaskan,Baik,VerySuperior,MelanjutkanStudi,Lainnya,TidakSesuai,LainnyaTidakBekerja,Nol,TidakAdaBonus,Puas,TepatWaktu,TidakAktif,Lulus
+Pria,CumLaude,Baik,AboveAverage,Bekerja,Multinasional,Sesuai,Staf,Tinggi,TidakAdaBonus,TidakPuas,TidakTepatWaktu,CukupAktif,Lulus
+Pria,Memuaskan,Baik,Superior,Bekerja,Nasional,Sesuai,Staf,SangatTinggi,TidakAdaBonus,TidakPuas,TepatWaktu,Aktif,Lulus
+Wanita,Memuaskan,Baik,VerySuperior,Bekerja,Nasional,TidakSesuai,Staf,SangatTinggi,TidakAdaBonus,TidakPuas,TepatWaktu,Aktif,Lulus
+Pria,Memuaskan,CukupBaik,VerySuperior,Bekerja,Nasional,Sesuai,Staf,SangatTinggi,Besar,TidakPuas,TepatWaktu,CukupAktif,Lulus
+Wanita,SangatMemuaskan,Baik,BelowAverage,Wirausaha,Nasional,TidakSesuai,Direktur,SangatRendah,TidakAdaBonus,TidakPuas,TepatWaktu,Aktif,Lulus
+Pria,Memuaskan,Baik,Genius,Bekerja,Lokal,Sesuai,Staf,Sedang,Sedang,TidakPuas,TidakTepatWaktu,KurangAktif,Lulus
+Wanita,SangatMemuaskan,Baik,Average,Bekerja,Nasional,Sesuai,Staf,Tinggi,Besar,TidakPuas,TepatWaktu,CukupAktif,Lulus
+Wanita,Memuaskan,Baik,AboveAverage,Bekerja,Lokal,TidakSesuai,Staf,Sedang,Besar,TidakPuas,TepatWaktu,CukupAktif,Lulus
+Pria,Memuaskan,Baik,BelowAverage,Bekerja,Multinasional,TidakSesuai,Staf,Tinggi,Sedang,TidakPuas,TepatWaktu,Aktif,Lulus
+Pria,Memuaskan,Baik,AboveAverage,Bekerja,Nasional,TidakSesuai,Staf,Sedang,Sedang,TidakPuas,TepatWaktu,CukupAktif,Lulus
+Wanita,Memuaskan,Baik,Genius,Bekerja,Multinasional,Sesuai,Staf,Tinggi,Sedang,TidakPuas,TepatWaktu,Aktif,Lulus
+Pria,SangatMemuaskan,CukupBaik,Average,MelanjutkanStudi,Lainnya,TidakSesuai,LainnyaTidakBekerja,Nol,TidakAdaBonus,Puas,TepatWaktu,TidakAktif,Lulus
+Pria,Memuaskan,Baik,BelowAverage,BekerjadanWiraswasta,Nasional,TidakSesuai,Pemilik,Tinggi,TidakAdaBonus,Puas,TidakTepatWaktu,Aktif,Lulus
+Pria,SangatMemuaskan,CukupBaik,BelowAverage,Bekerja,Multinasional,TidakSesuai,Staf,Tinggi,Besar,Puas,TepatWaktu,Aktif,Lulus
+Pria,Memuaskan,Baik,VerySuperior,Bekerja,Multinasional,TidakSesuai,Staf,Tinggi,Besar,TidakPuas,TidakTepatWaktu,Aktif,Lulus
+Pria,SangatMemuaskan,Baik,Average,MelanjutkanStudi,Lainnya,TidakSesuai,LainnyaTidakBekerja,Nol,TidakAdaBonus,Puas,TepatWaktu,TidakAktif,Lulus
+Pria,Memuaskan,CukupBaik,BelowAverage,Bekerja,Multinasional,Sesuai,Staf,Sedang,Besar,TidakPuas,TidakTepatWaktu,KurangAktif,Lulus
+Pria,Memuaskan,Baik,VerySuperior,Bekerja,Nasional,Sesuai,Staf,Tinggi,Sedang,TidakPuas,TepatWaktu,Aktif,Lulus
+Pria,Memuaskan,Baik,Average,Bekerja,Nasional,TidakSesuai,Staf,Tinggi,Besar,TidakPuas,TepatWaktu,Aktif,Lulus
+Pria,Memuaskan,CukupBaik,BelowAverage,Bekerja,Multinasional,Sesuai,Staf,Tinggi,TidakAdaBonus,TidakPuas,TepatWaktu,CukupAktif,Lulus
+Pria,Memuaskan,Baik,AboveAverage,TidakBekerja,Lainnya,TidakSesuai,LainnyaTidakBekerja,Nol,TidakAdaBonus,Puas,TepatWaktu,TidakAktif,Lulus
+Pria,Memuaskan,Baik,AboveAverage,Bekerja,Lokal,Sesuai,Staf,Tinggi,Besar,TidakPuas,TepatWaktu,CukupAktif,Lulus
+Pria,Memuaskan,Baik,Average,Bekerja,Multinasional,TidakSesuai,Staf,Tinggi,Sedang,TidakPuas,TidakTepatWaktu,CukupAktif,Lulus
+Wanita,SangatMemuaskan,Baik,Superior,Bekerja,Multinasional,TidakSesuai,Staf,Tinggi,Sedang,Puas,TepatWaktu,CukupAktif,Lulus
+Wanita,Memuaskan,Baik,Average,Bekerja,Nasional,TidakSesuai,Staf,Tinggi,Besar,TidakPuas,TepatWaktu,Aktif,Lulus
+Pria,Memuaskan,Baik,BelowAverage,Bekerja,Multinasional,Sesuai,Staf,SangatTinggi,TidakAdaBonus,TidakPuas,TepatWaktu,CukupAktif,Lulus
+Pria,Memuaskan,Baik,Average,Bekerja,Multinasional,Sesuai,Staf,Tinggi,TidakAdaBonus,Puas,TidakTepatWaktu,Aktif,Lulus
+Pria,DiBawah275,Baik,VerySuperior,Bekerja,Multinasional,TidakSesuai,Magang,SangatRendah,Sedang,TidakPuas,TidakTepatWaktu,KurangAktif,TidakLulus
+Pria,DiBawah275,SangatBaik,VerySuperior,TidakBekerja,Lainnya,TidakSesuai,LainnyaTidakBekerja,Tinggi,TidakAdaBonus,TidakPuas,TidakTepatWaktu,TidakAktif,TidakLulus
+Pria,DiBawah275,Baik,Superior,BekerjadanWiraswasta,Lainnya,Sesuai,Pemilik,Sedang,Sedang,TidakPuas,TidakTepatWaktu,TidakAktif,TidakLulus
+Pria,DiBawah275,Baik,VerySuperior,TidakBekerja,Lainnya,TidakSesuai,LainnyaTidakBekerja,Sedang,Besar,TidakPuas,TidakTepatWaktu,KurangAktif,TidakLulus
+Wanita,Memuaskan,Baik,Genius,Bekerja,Lokal,Sesuai,Staf,Sedang,Besar,TidakPuas,TepatWaktu,CukupAktif,Lulus
+Pria,Memuaskan,CukupBaik,Genius,Bekerja,Nasional,Sesuai,Staf,Sedang,TidakAdaBonus,TidakPuas,TepatWaktu,Aktif,Lulus
+Pria,Memuaskan,Baik,BelowAverage,Bekerja,Nasional,TidakSesuai,Staf,Sedang,TidakAdaBonus,TidakPuas,TidakTepatWaktu,CukupAktif,Lulus
+Pria,Memuaskan,CukupBaik,Average,MelanjutkanStudi,Lainnya,TidakSesuai,LainnyaTidakBekerja,Nol,TidakAdaBonus,Puas,TepatWaktu,TidakAktif,Lulus
+Pria,Memuaskan,SangatBaik,Genius,Bekerja,Nasional,TidakSesuai,Staf,Sedang,TidakAdaBonus,TidakPuas,TepatWaktu,CukupAktif,Lulus
+Pria,Memuaskan,Baik,Borderline,Bekerja,Nasional,Sesuai,Staf,Tinggi,Besar,Puas,TidakTepatWaktu,Aktif,Lulus
+Wanita,Memuaskan,Baik,Genius,Bekerja,Multinasional,TidakSesuai,Staf,Tinggi,Besar,TidakPuas,TepatWaktu,Aktif,Lulus
+Pria,Memuaskan,Baik,Average,Bekerja,Lokal,Sesuai,Staf,SangatRendah,TidakAdaBonus,Puas,TepatWaktu,Aktif,Lulus
+Wanita,Memuaskan,Baik,Superior,Bekerja,Nasional,TidakSesuai,Staf,Tinggi,Besar,TidakPuas,TepatWaktu,CukupAktif,Lulus
+Wanita,Memuaskan,Baik,VerySuperior,TidakBekerja,Lainnya,TidakSesuai,LainnyaTidakBekerja,Nol,TidakAdaBonus,Puas,TepatWaktu,TidakAktif,Lulus
+Pria,Memuaskan,Baik,Average,MelanjutkanStudi,Lainnya,TidakSesuai,LainnyaTidakBekerja,Nol,TidakAdaBonus,Puas,TepatWaktu,TidakAktif,Lulus
+Pria,Memuaskan,Baik,Borderline,Bekerja,Nasional,Sesuai,Staf,Rendah,TidakAdaBonus,TidakPuas,TidakTepatWaktu,CukupAktif,Lulus
+Pria,DiBawah275,Baik,Superior,BekerjadanWiraswasta,Nasional,TidakSesuai,Staf,Tinggi,TidakAdaBonus,TidakPuas,TidakTepatWaktu,Aktif,Lulus
+Pria,Memuaskan,Baik,AboveAverage,Bekerja,Multinasional,Sesuai,Staf,SangatTinggi,TidakAdaBonus,TidakPuas,TidakTepatWaktu,Aktif,Lulus
+Pria,Memuaskan,Baik,Genius,Bekerja,Nasional,Sesuai,Staf,SangatTinggi,Besar,TidakPuas,TidakTepatWaktu,Aktif,Lulus
+Pria,Memuaskan,Baik,BelowAverage,Bekerja,Nasional,Sesuai,Staf,Tinggi,Besar,TidakPuas,TidakTepatWaktu,Aktif,Lulus
+Wanita,Memuaskan,Baik,Average,MelanjutkanStudi,Lainnya,TidakSesuai,LainnyaTidakBekerja,Nol,TidakAdaBonus,Puas,TepatWaktu,TidakAktif,Lulus
+Pria,Memuaskan,Baik,BelowAverage,Bekerja,Lokal,Sesuai,Staf,Sedang,Sedang,TidakPuas,TepatWaktu,CukupAktif,Lulus
+Pria,Memuaskan,Baik,BelowAverage,Wirausaha,Nasional,TidakSesuai,Direktur,SangatTinggi,Besar,Puas,TidakTepatWaktu,Aktif,Lulus
+Pria,Memuaskan,Baik,Average,Bekerja,Nasional,TidakSesuai,Staf,Sedang,TidakAdaBonus,TidakPuas,TepatWaktu,CukupAktif,Lulus
+Pria,Memuaskan,Baik,VerySuperior,Bekerja,Lokal,Sesuai,Staf,Sedang,Sedang,TidakPuas,TidakTepatWaktu,Aktif,Lulus
+Pria,Memuaskan,Baik,Superior,Bekerja,Nasional,Sesuai,Staf,Rendah,TidakAdaBonus,TidakPuas,TepatWaktu,Aktif,Lulus
+Pria,Memuaskan,Baik,Average,Bekerja,Nasional,Sesuai,Staf,Tinggi,Sedang,TidakPuas,TidakTepatWaktu,CukupAktif,Lulus
+Pria,Memuaskan,CukupBaik,VerySuperior,Bekerja,Nasional,Sesuai,Staf,Sedang,Sedang,TidakPuas,TidakTepatWaktu,CukupAktif,Lulus
+Pria,Memuaskan,Baik,Average,Bekerja,Multinasional,Sesuai,Staf,Tinggi,Sedang,TidakPuas,TidakTepatWaktu,Aktif,Lulus
+Pria,Memuaskan,CukupBaik,Average,TidakBekerja,Lainnya,TidakSesuai,LainnyaTidakBekerja,Nol,TidakAdaBonus,Puas,TepatWaktu,TidakAktif,Lulus
+Pria,Memuaskan,Baik,Superior,MelanjutkanStudi,Lainnya,TidakSesuai,LainnyaTidakBekerja,Nol,TidakAdaBonus,Puas,TepatWaktu,TidakAktif,Lulus
+Wanita,Memuaskan,Baik,Genius,Bekerja,Lokal,TidakSesuai,Staf,Tinggi,Sedang,TidakPuas,TidakTepatWaktu,Aktif,Lulus
+Wanita,Memuaskan,Baik,Average,Bekerja,Nasional,Sesuai,Staf,Tinggi,TidakAdaBonus,Puas,TepatWaktu,CukupAktif,Lulus
+Pria,Memuaskan,CukupBaik,AboveAverage,Bekerja,Lokal,TidakSesuai,Direktur,Sedang,TidakAdaBonus,TidakPuas,TepatWaktu,CukupAktif,Lulus
+Pria,Memuaskan,Baik,Average,TidakBekerja,Lainnya,TidakSesuai,LainnyaTidakBekerja,Nol,TidakAdaBonus,Puas,TepatWaktu,TidakAktif,Lulus
+Wanita,Memuaskan,CukupBaik,AboveAverage,Bekerja,Nasional,Sesuai,Staf,Tinggi,Besar,TidakPuas,TepatWaktu,CukupAktif,Lulus
